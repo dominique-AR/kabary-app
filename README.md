@@ -41,24 +41,24 @@ MainActivity
 ---
 
 ## Ouvrir le projet :
-1.Utilisez Android Studio (version stable recommandée).
-2. Laissez Gradle télécharger les dépendances.
+* Utilisez Android Studio (version stable recommandée).
+* Laissez Gradle télécharger les dépendances.
 
 ---
 
 ## 🚀 Fonctionnalités à Venir
-Liste de proverbes malgaches (ohabolana).
-Recherche intelligente de proverbes.
-Sagesse du jour (notifications quotidiennes).
-Favoris pour sauvegarder vos proverbes préférés.
+* Liste de proverbes malgaches (ohabolana).
+* Recherche intelligente de proverbes.
+* Sagesse du jour (notifications quotidiennes).
+* Favoris pour sauvegarder vos proverbes préférés.
 
 ---
 ## 🤝 Contribution
-Ce projet est ouvert à tous ! Si vous souhaitez contribuer :
-Signaler un bug : Ouvrez une Issue.
-Proposer une fonctionnalité : Ouvrez une Issue ou soumettez une Pull Request.
-Ajouter du contenu éducatif : Modifiez les pages d'information ou proposez des quiz supplémentaires.
+* Ce projet est ouvert à tous ! Si vous souhaitez contribuer :
+* Signaler un bug : Ouvrez une Issue.
+* Proposer une fonctionnalité : Ouvrez une Issue ou soumettez une Pull Request.
+* Ajouter du contenu éducatif : Modifiez les pages d'information ou proposez des quiz supplémentaires.
 
 ---
-##🙏 Remerciements
+## 🙏 Remerciements
 Un grand Misaotra betsaka à tous ceux qui soutiennent ce projet, que ce soit par du code, des idées ou des encouragements. Ensemble, faisons vivre la culture malgache !
