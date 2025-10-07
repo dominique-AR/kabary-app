@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5E6D3"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- En-tête avec titre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎭 Quiz Mpikabary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#3E2723"
+            android:gravity="center"
+            android:paddingBottom="8dp"/>
+
+        <!-- Compteur de questions -->
+        <TextView
+            android:id="@+id/question_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1 / 6"
+            android:textSize="16sp"
+            android:textColor="#5D4037"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Barre de progression -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="100"
+            android:progress="16"
+            android:progressTint="#4CAF50"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Question Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp"
+            android:radius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/question_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#2C2C2C"
+                    android:lineSpacingExtra="4dp"
+                    android:textStyle="bold"
+                    android:gravity="start" />
+
+                <!-- Bouton indice -->
+                <Button
+                    android:id="@+id/hint_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💡 Voir l'indice"
+                    android:textSize="14sp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#FF9800"
+                    android:textColor="#FFFFFF"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+
+                <!-- Texte de l'indice -->
+                <TextView
+                    android:id="@+id/hint_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"
+                    android:background="#FFF3E0"
+                    android:textSize="14sp"
+                    android:textColor="#E65100"
+                    android:textStyle="italic"
+                    android:lineSpacingExtra="2dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Réponses -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choisissez votre réponse :"
+            android:textSize="16sp"
+            android:textColor="#5D4037"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/answer_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D7CCC8"
+            android:textColor="#3E2723"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="start|center_vertical"
+            android:textAlignment="textStart"/>
+
+        <Button
+            android:id="@+id/answer_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D7CCC8"
+            android:textColor="#3E2723"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="start|center_vertical"
+            android:textAlignment="textStart"/>
+
+        <Button
+            android:id="@+id/answer_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D7CCC8"
+            android:textColor="#3E2723"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="start|center_vertical"
+            android:textAlignment="textStart"/>
+
+        <Button
+            android:id="@+id/answer_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D7CCC8"
+            android:textColor="#3E2723"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="start|center_vertical"
+            android:textAlignment="textStart"/>
+
+        <!-- Bouton Valider -->
+        <Button
+            android:id="@+id/validate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✓ Valider ma réponse"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Résultat -->
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:background="#E8F5E9"/>
+
+        <!-- Bouton Next -->
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➜ Question suivante"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+</ScrollView>

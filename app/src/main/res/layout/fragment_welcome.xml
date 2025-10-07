@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5E6D3">
+
+    <!-- Logo Mpikabary -->
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/logo_mpikabary"
+        android:contentDescription="Logo Mpikabary"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="🎭 Mpikabary Quiz 🎭\nDécouvrez l'art oratoire malgache"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#3E2723"
+        android:gravity="center"
+        android:background="@drawable/bordered_beige_text"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Bouton Découvrir -->
+    <Button
+        android:id="@+id/discover_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📖 Découvrir le Kabary"
+        android:textSize="16sp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"/>
+
+    <!-- Séparateur -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BCAAA4"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prêt(e) pour le quiz ?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#5D4037"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Label asking for user's name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quel est votre nom ?"
+        android:textSize="16sp"
+        android:textColor="#5D4037"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Input field -->
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre nom"
+        android:inputType="textPersonName"
+        android:textColorHint="#A1887F"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/start_quiz_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌳 Commencer l'aventure"
+        android:textSize="16sp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"/>
+</LinearLayout>

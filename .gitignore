@@ -1,0 +1,17 @@
+# Fichiers de build
+/build
+/app/build
+
+# Fichiers de configuration locaux
+.idea/
+.gradle/
+local.properties
+
+# Fichiers de l'émulateur et de la machine virtuelle
+*.iml
+*.apk
+*.aab
+
+# Fichiers de log et de cache
+captures/
+.DS_Store
